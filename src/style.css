@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap');
+
+:root{
+    --main-color: #ffcc99;
+    --accent-color: #804000;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Bitter', serif;
+}
+
+.container{
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome-msg{
+    color: var(--main-color);
+    font-weight: 600;
+    width: 80%;
+    text-shadow: 2px 2px 2px var(--accent-color);
+    line-height: 1.5;
+    font-size: 70px;
+    text-align: center;
+}
+
+.load-text{
+    font-size: 70px;
+    text-align: center;
+    color: #0d0d0d;
+    z-index: 100;
+    display: none;
+}
+
+.motivation-msg{
+    color: #f2f2f2;
+    width: 80%;
+    text-shadow: 2px 2px 2px #0d0d0d;
+    line-height: 1.5;
+    font-size: 70px;
+    text-align: center;
+    display: none;
+}
+
+.motivation-author{
+    color: #f2f2f2;
+    width: 80%;
+    text-shadow: 2px 2px 2px #0d0d0d;
+    line-height: 1.5;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: right;
+    display: none;
+}
+
+button{
+    height: 100px;
+    width: 200px;
+    font-family: 'Bitter', serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-shadow: 2px 2px 2px var(--accent-color);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+footer{
+    height: 120px;
+    width: 100%;
+    background-color: var(--main-color);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    color: var(--accent-color);
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+a:hover{
+    color: #331a00;
+    font-weight: 700;
+}
+
+@media (max-width: 1400px) {
+    .welcome-msg{
+        font-size: 40px;
+    }
+    
+    .motivation-msg{
+        font-size: 30px;
+    }
+    
+    .motivation-author{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    button{
+        font-size: 40px;
+        color: var(--accent-color);
+    }
+
+    footer{
+        width: unset;
+    }
+    
+}
