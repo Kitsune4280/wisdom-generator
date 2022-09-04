@@ -76,11 +76,11 @@ function getQuote(){
         motivation.innerHTML = data.content;
         author.innerHTML = data.author;
     }).catch(error =>{
-        getBackupQuote();
         console.error(error);
     })
 }
 
+getBackupQuote();
 getQuote();
 
 function blurring(){
